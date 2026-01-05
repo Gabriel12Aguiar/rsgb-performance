@@ -4,39 +4,18 @@
   box-sizing: border-box;
 }
 
-html {
-  width: 100%;
-  min-height: 100%;
-  background-image: url(./assets/solid-black-background-9ctb77194tdactsh.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 body {
-  width: 100%;
-  min-height: 100vh;
-
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-  background: transparent;
-
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
-
-  
-  padding-top: constant(safe-area-inset-top);
-  padding-bottom: constant(safe-area-inset-bottom);
+  background: url(./assets/solid-black-background-9ctb77194tdactsh.jpg);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 100vh;
 }
-
 
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 56px auto 0;
+  margin: 56px auto 0px;
 }
-
 
 #profile {
   text-align: center;
@@ -56,14 +35,13 @@ body {
   font-weight: 500;
 }
 
-
 ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   padding: 8px 0;
   gap: 12px;
-  margin-top: 8px;
+  margin-top: 2px;
 }
 
 ul li a {
@@ -72,35 +50,29 @@ ul li a {
   justify-content: center;
 
   font-weight: 500;
+  border: 1px solid #666;
   text-decoration: none;
-  color: white;
-
   padding: 16px;
   margin: 0 32px;
+  color: white;
   border-radius: 10px;
-  border: 1px solid #666;
 
-  background: rgba(17, 17, 17, 0.85);
+  background: #111;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-
-  transition: background 0.2s, border 0.2s;
+  transition: background 0.2s;
 }
-
-
-@media (hover: hover) {
-  ul li a:hover {
-    background: rgba(0, 0, 0, 0.9);
-    border: 1.5px solid white;
-  }
+ul li a:hover {
+  background: black;
+  border: 1.5px solid white;
 }
-
 
 #social-links {
   display: flex;
   justify-content: center;
+
+  padding: 12px 0px;
   gap: 5px;
-  padding: 24px 0;
   font-size: 24px;
 }
 
@@ -108,16 +80,13 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 16px;
-  border-radius: 50%;
-  color: white;
 
   transition: background 0.2s;
+  border-radius: 50%;
+  color: white;
 }
 
-@media (hover: hover) {
-  #social-links a:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
