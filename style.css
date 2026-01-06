@@ -73,7 +73,7 @@ ul li a {
 }
 ul li a:hover {
   background: black;
-  border: 1.5px solid white;
+  border: 1.5px solid #E31C25;
 }
 
 #social-links {
@@ -97,5 +97,5 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #E31C25;
 }
